@@ -34,7 +34,7 @@ window.quizData.zeirishiSyotokuAdvanced = [
 
 ];
 
-for(let i=26;i<=100;i++){
+{
   window.quizData.zeirishiSyotokuAdvanced.push({
     q:`所得税法応用問題${i}：課税所得金額を計算するとき、所得金額から差し引くものは？`,
     c:["所得控除","税額控除","消費税","住民税"],
