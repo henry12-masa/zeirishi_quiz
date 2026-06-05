@@ -3,7 +3,6 @@ const params = new URLSearchParams(location.search);
 const type =
 params.get("type") || "zeirishiBoki";
 
-const allQuestions =
 window.quizData[type] ||
 window.quizData.zeirishiBoki;
 
