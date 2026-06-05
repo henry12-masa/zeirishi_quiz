@@ -80,34 +80,8 @@ const quizInfo = {
 
 };
 
-function fillTo100(key, label){
-  if(!window.quizData[key]) return;
 
-  const base = window.quizData[key];
 
-  for(let i = base.length + 1; i <= 100; i++){
-    base.push({
-      q:`${label} 練習問題${i}：この科目で重要な基本論点は？`,
-      c:["基本用語の理解","画像編集","HTML装飾","英単語暗記"],
-      a:"基本用語の理解"
-    });
-  }
-}
-
-fillTo100("zeirishiBoki", "簿記論");
-fillTo100("zeirishiZaimu", "財務諸表論");
-fillTo100("zeirishiSyotoku", "所得税法");
-fillTo100("zeirishiSyotokuAdvanced", "所得税法応用");
-fillTo100("zeirishiHoujin", "法人税法");
-fillTo100("zeirishiHoujinAdvanced", "法人税法応用");
-fillTo100("zeirishiSyouhi", "消費税法");
-fillTo100("zeirishiSouzoku", "相続税法");
-fillTo100("zeirishiKotei", "固定資産税");
-fillTo100("zeirishiKokucho", "国税徴収法");
-fillTo100("zeirishiJumin", "住民税");
-fillTo100("zeirishiJigyou", "事業税");
-fillTo100("zeirishiSake", "酒税法");
-fillTo100("zeirishiMix", "総合演習");
 
 const allQuestions =
   window.quizData?.[type] || window.quizData.zeirishiBoki;
